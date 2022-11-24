@@ -6,48 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TicTacToe</title>
 
-    <script>
-        choices = ["rock", "paper", "scissors"]
-
-        function getComputerChoice() {
-            const compChoice = choices[Math.floor(Math.random() * choices.length)];
-            return compChoice;
-        };
-
-        function playRound(playerSelection, computerSelection) {
-            playerSelection = playerSelection.toLowerCase();
-
-            if (playerSelection == "rock") {
-                if (computerSelection == "rock") {
-                    return "It's a tie!"
-                } else if (computerSelection == "paper") {
-                    return "You lose! Paper covers rock!"
-                } else if (computerSelection == "scissors") {
-                    return "You win! Rock smashes scissors!"
-                };
-            } else if (playerSelection == "paper") {
-                if (computerSelection == "rock") {
-                    return "You win! Paper covers rock!"
-                } else if (computerSelection == "paper") {
-                    return "It's a tie!"
-                } else if (computerSelection == "scissors") {
-                    return "You lose! Scissors cut paper"
-                };
-            } else if (playerSelection == "scissors") {
-                if (computerSelection == "rock") {
-                    return "You lose! Rock smashes scissors!"
-                } else if (computerSelection == "paper") {
-                    return "You win! Scissors cut paper!"
-                } else if (computerSelection == "scissors") {
-                    return "It's a tie!"
-                };
-            } else {
-                console.log("Invalid entry!")
-            };
-        }
-    </script>
+    <script src="script.js"></script>
 </head>
 <body>
-    
 </body>
 </html>
