@@ -1,1 +1,1 @@
-# ticTacToe
+# rock-paper-scissors
